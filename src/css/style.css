@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Circle Light';
+  src: url("../fonts/cirLig/Circe-Light.eot");
+  src: url("../fonts/cirLig/Circe-Light.woff2");
+  src: url("../fonts/cirLig/Circe-Light.woff");
+  src: url("../fonts/cirLig/Circe-Light.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Circle Extra Light';
+  src: url("../fonts/cirExLig/Circe-ExtraLight.eot");
+  src: url("../fonts/cirExLig/Circe-ExtraLight.woff2");
+  src: url("../fonts/cirExLig/Circe-ExtraLight.woff");
+  src: url("../fonts/cirExLig/Circe-ExtraLight.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Circle Regular';
+  src: url("../fonts/cirReg/Circe-Regular.eot");
+  src: url("../fonts/cirReg/Circe-Regular.woff2");
+  src: url("../fonts/cirReg/Circe-Regular.woff");
+  src: url("../fonts/cirReg/Circe-Regular.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Circle Bold';
+  src: url("../fonts/cirBold/Circe-Bold.eot");
+  src: url("../fonts/cirBold/Circe-Bold.woff2");
+  src: url("../fonts/cirBold/Circe-Bold.woff");
+  src: url("../fonts/cirBold/Circe-Bold.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Circle Extra Bold';
+  src: url("../fonts/cirExBold/Circe-ExtraBold.eot");
+  src: url("../fonts/cirExBold/Circe-ExtraBold.woff2");
+  src: url("../fonts/cirExBold/Circe-ExtraBold.woff");
+  src: url("../fonts/cirExBold/Circe-ExtraBold.ttf");
+  font-display: swap; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: "Circle Regular";
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000; }
+
+body, input, textarea {
+  font-family: "Circle Regular";
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+a, a:hover {
+  text-decoration: none; }
+
+button, input, a, textarea {
+  outline: none;
+  cursor: pointer; }
+  button:focus, input:focus, a:focus, textarea:focus {
+    outline: none; }
+  button:active, input:active, a:active, textarea:active {
+    outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: unset;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+    vertical-align-width: 100%; }
+
+.btn {
+  border: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container {
+  width: 147rem;
+  margin: 0 auto;
+  position: relative;
+  max-width: unset; }
+
+.hidden {
+  overflow: hidden; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+@media (max-width: 108em) {
+  html {
+    font-size: 9px; } }
+
+@media (max-width: 105em) {
+  html {
+    font-size: 8.75px; } }
+
+@media (max-width: 91.5em) {
+  html {
+    font-size: 7.9px; } }
+
+@media (max-width: 91em) {
+  html {
+    font-size: 8.4px; } }
+
+@media (max-width: 90em) {
+  html {
+    font-size: 7.9px; } }
+
+@media (max-width: 80em) {
+  html {
+    font-size: 7.2px; } }
+
+@media (max-width: 72em) {
+  html {
+    font-size: 6.5px; } }
+
+@media (max-width: 68em) {
+  html {
+    font-size: 6px; } }
+
+@media (max-width: 64em) {
+  html {
+    font-size: 5.5px; } }
+
+@media (max-width: 60em) {
+  html {
+    font-size: 5.2px; } }
+
+@media (max-width: 55em) {
+  html {
+    font-size: 5px; } }
+
+@media (max-width: 51em) {
+  html {
+    font-size: 4.5px; } }
+
+@media (max-width: 48em) {
+  html {
+    font-size: 10px;
+    -webkit-text-size-adjust: none; }
+  body {
+    -webkit-text-size-adjust: none; }
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%; } }
+
+@media (max-width: 44em) {
+  html {
+    font-size: 9px; } }
+
+@media (max-width: 38em) {
+  html {
+    font-size: 8px; } }
+
+@media (max-width: 34em) {
+  html {
+    font-size: 7px; } }
+
+@media (max-width: 30em) {
+  html {
+    font-size: 6px; } }
+
+@media (max-width: 26em) {
+  html {
+    font-size: 5px; } }
+
+@media (max-width: 22.5em) {
+  html {
+    font-size: 4.5px; } }
+
+@media (max-width: 21em) {
+  html {
+    font-size: 4.4px; } }
+
+.titleMain {
+  font-size: 5.2rem;
+  font-family: "Circle Extra Bold";
+  /*удалить при надобности*/
+  display: flex;
+  justify-content: center; }
