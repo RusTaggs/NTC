@@ -63,7 +63,7 @@ function cleanimg() {
 
 function startwatch() {
 	watch(baseDir  + '/' + preprocessor + '/**/*', {usePolling: true}, styles);
-	watch(baseDir  + '/img/**/*.{' + imageswatch + '}', {usePolling: true}, images);
+	watch(baseDir  + '/original-img/**/*.{' + imageswatch + '}', {usePolling: true}, images);
 	watch(baseDir  + '/**/*.{' + fileswatch + '}', {usePolling: true}).on('change', browserSync.reload);
 }
 
