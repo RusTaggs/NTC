@@ -1,87 +1,88 @@
+$(document).ready(function(){
 
-  var autoplay = 5000;
-    var mySwiper = new Swiper('.swiper-container', {
+    
+    var headerSwiper = new Swiper('.swiper-container__main', {
         
-      autoplay: {
-        delay: autoplay,
-        disableOnInteraction: false,
-      },
+      spaceBetween: 0,
       speed: 500,
-      loop: true,
+      
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
           type: 'fraction',
-          
         },
        
       
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.nxt_main',
+          prevEl: '.prv_main',
         },
       
         // And if we need scrollbar
         scrollbar: {
-          el: '.swiper-scrollbar',
-          
+          el: '.main-scrollbar',
+          hide: false,
+          dragSize: 'auto'
         },
        
         
-      });
-
+    });
+    
+    var newsSwiper = new Swiper('.swiper-news-container', {
       
-
-      (function svg_map_load(){
-        var $container = $('.svg-map');
-        if (!$container.length) return;
+      effect: 'coverflow',
+     
+      spaceBetween: 50,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      scrollbar: {
+        el: '.news-scrollbar',
+        hide: false,
+      },
+      navigation: {
+          nextEl: '.nxt_news',
+          prevEl: '.prv_news',
+        },
+      pagination: {
+        el: '.swiper-news-pagination',
+        type: 'fraction'
+      },
       
-        function init() {
-          $.get('/assets/components/ntcees/map.svg', function(data) {
-            var svg = $(data).find('svg');
-            
-            $container.prepend( svg ).addClass('svg-map_ready');
-            $(document).trigger( "svgmap:ready", [ "Custom", "Event" ] );
-          });
-        }
+    });
+    var projectsSwiper = new Swiper('.swiper-projects-container', {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      slidesPerGroup: 3,
+      slideClass: 'project-slide',
       
-        init();
-      })();
+      pagination: {
+        el: '.swiper-projects-pagination',
+        type: 'fraction'
+      },
+      scrollbar: {
+        el: '.projects-scrollbar',
+        hide: false,
+        dragSize: 'auto'
+      },
+      navigation: {
+        nextEl: '.nxt_projects',
+        prevEl: '.prv_projects',
+      },
+    });
       
-      
-      (function svg_map_home(){
-        var num = $('.panel_home-map .projects-count__num [data-value]');
-        var region_name = $('.panel_home-map .projects-count__region [data-value]');
-        var count_title = $('.panel_home-map .projects-count__title [data-value]');
-        var url = $('.svg-map_home').data('url');
-        
-        $(document).on('mouseenter', '.svg-map_home polygon, .svg-map_home path', function(event) {
-          var reg_id = $(this).data("id"),
-              result = $.grep(NTCEES.regions, function(e){ return e.map_area == reg_id; });
-      
-          if (result.length) {
-            
-      
-            if (result[0].projects > 0) {
-              num.text( result[0].projects );
-              region_name.text( result[0].string );
-              count_title.text( result[0].title );
-            } else {
-              num.text( num.data('default') );
-              region_name.text( region_name.data('default') );
-              count_title.text( count_title.data('default') );
-            }
-          }    
-        });
-        
-        $(document).on('mouseleave', '.svg-map_home polygon, .svg-map_home path', function(){
-          num.text( num.data('default') );
-          region_name.text( region_name.data('default') );
-          count_title.text( count_title.data('default') );
-        });
-        
-        $(document).on('click', '.svg-map_home polygon, .svg-map_home path', function(){
-          window.location = url + '?map_area=' + $(this).data('id');
-        });
-      })();
+    $('.project-slide').hover(function(){
+      $(this).find('.projects-bg-img').addClass('active')
+    }, function(){
+      $(this).find('.projects-bg-img').removeClass('active')
+    }
+    );
+});

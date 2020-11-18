@@ -44,26 +44,28 @@
 	</header>
 	<main>
 		<div class="slider">
-			<div class="swiper-container">
+			<div class="swiper-container swiper-container__main">
 				<!-- Additional required wrapper -->
+				<div class="nav-container">
+					<div class="slider-nav">
+						<div class="swiper-pagination pag_main"></div>
+	
+						<!-- If we need navigation buttons -->
+						<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+	
+						<!-- If we need scrollbar -->
+						<div class="main-scrollbar"></div>
+						
+					</div>
+				</div>
 				<div class="swiper-wrapper">
 					<!-- Slides -->
 					<div class="swiper-slide">
 						<div class="slide1">
 							<div class="container">
 								<div class="slide-left">
-									<div class="slider-nav">
-										<div class="swiper-pagination"></div>
-
-										<!-- If we need navigation buttons -->
-										<!-- <div class="swiper-button-prev"></div>
-										<div class="swiper-button-next"></div> -->
-
-										<!-- If we need scrollbar -->
-										<div class="swiper-progress-bar" id="progress">
-
-										</div>
-									</div>
+								
 									<div class="left-slide-text">
 										<p class="title">Акционерное общество</p>
 										<p class="text">«Научно-технический центр Единой энергетической Системы Группа
@@ -87,16 +89,7 @@
 							<div class="container">
 								<div class="slide-left">
 									<div class="slider-nav">
-										<div class="swiper-pagination"></div>
-
-										<!-- If we need navigation buttons -->
-										<!-- <div class="swiper-button-prev"></div>
-										<div class="swiper-button-next"></div> -->
-
-										<!-- If we need scrollbar -->
-										<div class="swiper-progress-bar">
-											<span class="slide_progress-bar"></span>
-										</div>
+										
 									</div>
 									<div class="left-slide-text">
 										<p class="title">Акционерное общество</p>
@@ -211,17 +204,272 @@
 		</div>
 		<div class="more-about">
 		</div>
-		<div class="companies"></div>
-		<div class="sliders">
-			<div class="projects-slider"></div>
-			<div class="news-slider"></div>
+		<div class="companies">
+			<div class="container">
+				<div class="companies-head">
+					<div class="titleMain">Дочерние <span>компании</span></div>
+					<div class="text"></div>
+				</div>
+				<div class="companies-content">
+					<div class="content-item">
+						<div class="content-back">
+							<p class="titleBig">НТЦ ЕЭС 
+								противоаварийное
+								управление</p>
+							<p class="text">Ключевое
+								дочерний 
+								проект</p>
+						</div>
+						<a href="" class="link">Подробнее</a>
 
+					</div>
+					<div class="content-item">
+						<div class="content-back">
+							<p class="titleBig">НТЦ ЕЭС 
+								противоаварийное
+								управление</p>
+							<p class="text">Ключевое
+								дочерний 
+								проект</p>
+						</div>
+						<a href="" class="link">Подробнее</a>
+
+					</div>
+					<div class="content-item">
+						<div class="content-back">
+							<p class="titleBig">НТЦ ЕЭС 
+								противоаварийное
+								управление</p>
+							<p class="text">Ключевое
+								дочерний 
+								проект</p>
+						</div>
+						<a href="" class="link">Подробнее</a>
+
+					</div>
+					
+				</div>
+			</div>
 		</div>
+		<div class="sliders">
+			<div class="projects-slider">
+				<div class="container">
+					<div class="swiper-projects-container .swiper-container">
+						<div class="slider-head">
+							<div class="titleMain">Наши <span>проекты</span></div>
+							<div class="slider-nav">
+								<div class="navigation">
+									<div class="main-nav">
+										<div class="swiper-projects-pagination"></div>
 
+								<!-- If we need navigation buttons -->
+										<div class="nav-buttons">
+											<div class="swiper-button-prev swiper-button-white prv_projects"></div>
+											<div class="swiper-button-next swiper-button-white nxt_projects"></div>
+
+										</div>
+									</div>
+									<div class="projects-scrollbar swiper-scrollbar"></div>
+								</div>
+								<!-- If we need scrollbar -->
+								<div class="swiper-progress-bar" id="progress">
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-wrapper">
+							<div class="swiper-slide project-slide">
+								<div class="text-container">
+									<img src="img/antenna-logo.png" alt="">
+									<div class="title">Год завершения:</div>
+									<div class="text">2020</div>
+									<div class="title">Проект:</div>
+									<div class="text">Разработка схемы выдачи мощности ириклинская ГРЕС</div>
+									<div class="title">Заказчик:</div>
+									<div class="text">УК РусЭнергоМир ООО</div>
+									<a href="" class="button link">Подробнее</a>
+								</div>
+								<img class="projects-bg-img" src="img/projects1.png" alt="">
+							</div>
+							<div class="swiper-slide project-slide">
+								<div class="text-container">
+									<img src="img/antenna-logo.png" alt="">
+									<div class="title">Год завершения:</div>
+									<div class="text">2020</div>
+									<div class="title">Проект:</div>
+									<div class="text">Разработка схемы выдачи мощности ириклинская ГРЕС</div>
+									<div class="title">Заказчик:</div>
+									<div class="text">УК РусЭнергоМир ООО</div>
+									<a href="" class="button link">Подробнее</a>
+								</div>
+								<img class="projects-bg-img" src="img/projects1.png" alt="">
+							</div>
+							<div class="swiper-slide project-slide">
+								<div class="text-container">
+									<img src="img/antenna-logo.png" alt="">
+									<div class="title">Год завершения:</div>
+									<div class="text">2020</div>
+									<div class="title">Проект:</div>
+									<div class="text">Разработка схемы выдачи мощности ириклинская ГРЕС</div>
+									<div class="title">Заказчик:</div>
+									<div class="text">УК РусЭнергоМир ООО</div>
+									<a href="" class="button link">Подробнее</a>
+								</div>
+								<img class="projects-bg-img" src="img/projects1.png" alt="">
+							</div>
+							<div class="swiper-slide project-slide">
+								<div class="text-container">
+									<img src="img/antenna-logo.png" alt="">
+									<div class="title">Год завершения:</div>
+									<div class="text">2020</div>
+									<div class="title">Проект:</div>
+									<div class="text">Разработка схемы выдачи мощности ириклинская ГРЕС</div>
+									<div class="title">Заказчик:</div>
+									<div class="text">УК РусЭнергоМир ООО</div>
+									<a href="" class="button link">Подробнее</a>
+								</div>
+								<img class="projects-bg-img" src="img/projects1.png" alt="">
+							</div>
+							<div class="swiper-slide project-slide">
+								<div class="text-container">
+									<img src="img/antenna-logo.png" alt="">
+									<div class="title">Год завершения:</div>
+									<div class="text">2020</div>
+									<div class="title">Проект:</div>
+									<div class="text">Разработка схемы выдачи мощности ириклинская ГРЕС</div>
+									<div class="title">Заказчик:</div>
+									<div class="text">УК РусЭнергоМир ООО</div>
+									<a href="" class="button link">Подробнее</a>
+								</div>
+								<img class="projects-bg-img" src="img/projects1.png" alt="">
+							</div>
+							<div class="swiper-slide project-slide">
+								<div class="text-container">
+									<img src="img/antenna-logo.png" alt="">
+									<div class="title">Год завершения:</div>
+									<div class="text">2020</div>
+									<div class="title">Проект:</div>
+									<div class="text">Разработка схемы выдачи мощности ириклинская ГРЕС</div>
+									<div class="title">Заказчик:</div>
+									<div class="text">УК РусЭнергоМир ООО</div>
+									<a href="" class="button link">Подробнее</a>
+								</div>
+								<img class="projects-bg-img" src="img/projects1.png" alt="">
+							</div>
+							
+						</div>
+						<!-- Add Pagination -->
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="news-slider">
+				<div class="container">
+					<div class="swiper-news-container .swiper-container">
+						<div class="slider-head">
+							<div class="titleMain">Новости <span>компании</span></div>
+							<div class="slider-nav">
+								<div class="navigation">
+									<div class="main-nav">
+										<div class="swiper-news-pagination"></div>
+
+								<!-- If we need navigation buttons -->
+										<div class="nav-buttons">
+											<div class="swiper-button-prev  swiper-button-white prv_news"></div>
+											<div class="swiper-button-next  swiper-button-white nxt_news"></div>
+
+										</div>
+									</div>
+									<div class="news-scrollbar"></div>
+								</div>
+								<!-- If we need scrollbar -->
+								<div class="swiper-progress-bar" id="progress">
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			
+			</div>
+		</div>
+		<div class="contact-form">
+			<div class="container">
+				<div class="contacts">
+					<div class="titleMain">
+						Оставьте 
+						<span>заявку</span>
+					</div>
+					<div class="title">Краткое название:</div>
+					<div class="text">АО «НТЦ ЕЭС Группа компаний» JSC «STC UPS Group»</div>
+					<div class="title">Телефон:</div>
+					<div class="text phone">+7 (499) 788-15-88</div>
+					<div class="title">E-mail:</div>
+					<div class="text">info@ntc-msk.ru</div>
+					<div class="title">Адрес (место нахождения):</div>
+					<div class="text">Россия, 109074, г. Москва, Китайгородский проезд, д. 7, стр. 3</div>
+				</div>
+				<div class="img-container">
+					<img src="img/footer-big.png" alt="">
+					<img src="img/footer-mini.png" alt="">
+				</div>
+				<form action="" method="POST">
+
+					<div class="titleMain">
+						Оставьте 
+						<span>заявку</span>
+					</div>
+					<div class="form-label name">Ваше имя</div>
+					<input type="text" name="name">
+					<div class="form-label email">E-mail</div>
+					<input type="email" name="email">
+					<div class="form-label message">Сообщение</div>
+					<input type="text" name="message">
+					<input type="submit" value="Отправить" class="button">
+					
+				</form>
+			</div>
+		</div>
 
 	</main>
 	<footer>
-
+		<div class="container">
+			<div class="footer-company-logo">
+				<img src="img/logo-footer.png" alt="">
+				<p class="text">(c) 2016-2020 АО «НТЦ ЕЭС
+					Группа компаний»</p>
+			</div>
+			<div class="request-logo">
+				<p class="text">Разработано <span>REQUEST</span></p>
+				<img src="img/reques-dsgn-logo.png" alt="">
+			</div>
+		</div>
 	</footer>
 	<script src="js/main.js"></script>
 

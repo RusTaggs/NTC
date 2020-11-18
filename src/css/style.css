@@ -227,6 +227,15 @@ input[type=number] {
   text-decoration: none;
   color: #000; }
 
+.button {
+  width: 19rem;
+  border-radius: 9rem;
+  border: 0.1rem solid #8FA5A7;
+  padding: 1.6rem 5.2rem;
+  font-family: "Gilroy Medium", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500; }
+
 header .menu {
   z-index: 100;
   width: 140rem;
@@ -266,7 +275,35 @@ header .menu {
         width: 3.1rem; }
 
 main .slider .swiper-container {
-  height: 65rem; }
+  height: 65rem;
+  position: relative; }
+  main .slider .swiper-container .nav-container {
+    width: 140rem;
+    margin: 0 auto; }
+    main .slider .swiper-container .nav-container .slider-nav {
+      width: 28rem;
+      position: absolute;
+      z-index: 10;
+      top: 31rem; }
+      main .slider .swiper-container .nav-container .slider-nav .swiper-pagination {
+        position: static;
+        text-align: left;
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: 2rem;
+        font-weight: 400; }
+        main .slider .swiper-container .nav-container .slider-nav .swiper-pagination .swiper-pagination-current {
+          font-family: "Gilroy Medium", sans-serif;
+          font-size: 4rem;
+          font-weight: 600; }
+        main .slider .swiper-container .nav-container .slider-nav .swiper-pagination .swiper-pagination-total {
+          font-family: "Gilroy Regular", sans-serif;
+          font-size: 2rem;
+          font-weight: 400; }
+      main .slider .swiper-container .nav-container .slider-nav .main-scrollbar {
+        height: 0.3rem;
+        background: rgba(255, 255, 255, 0.3); }
+        main .slider .swiper-container .nav-container .slider-nav .main-scrollbar .swiper-scrollbar-drag {
+          background: #fff; }
   main .slider .swiper-container .swiper-pagination {
     font-size: 3rem;
     color: #fff; }
@@ -293,24 +330,8 @@ main .slider .swiper-container {
         main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left,
         main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left {
           width: 28rem;
-          position: relative; }
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .slider-nav .swiper-pagination,
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .slider-nav .swiper-pagination {
-            position: static;
-            text-align: left;
-            font-family: "Gilroy Regular", sans-serif;
-            font-size: 2rem;
-            font-weight: 400; }
-            main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .slider-nav .swiper-pagination .swiper-pagination-current,
-            main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .slider-nav .swiper-pagination .swiper-pagination-current {
-              font-family: "Gilroy Medium", sans-serif;
-              font-size: 4rem;
-              font-weight: 600; }
-            main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .slider-nav .swiper-pagination .swiper-pagination-total,
-            main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .slider-nav .swiper-pagination .swiper-pagination-total {
-              font-family: "Gilroy Regular", sans-serif;
-              font-size: 2rem;
-              font-weight: 400; }
+          position: relative;
+          margin-top: 10rem; }
           main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .left-slide-text .title,
           main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .left-slide-text .text,
           main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .left-slide-text .title,
@@ -436,7 +457,7 @@ main .main-about {
         color: #ffffff;
         margin-bottom: 5rem; }
         main .main-about .container .items .titleMain span {
-          color: #BDB0A0; }
+          color: #8FA5A7; }
       main .main-about .container .items .items-container {
         display: flex;
         justify-content: center; }
@@ -470,5 +491,365 @@ main .main-about {
             text-transform: uppercase;
             letter-spacing: 1rem; }
 
+main .companies {
+  margin-top: 10rem;
+  margin-bottom: 13.5rem; }
+  main .companies .container .companies-head .titleMain {
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 6rem; }
+    main .companies .container .companies-head .titleMain span {
+      color: #8FA5A7; }
+  main .companies .container .companies-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .companies .container .companies-content .content-item {
+      width: 41.5rem;
+      margin-right: 2.5rem;
+      position: relative;
+      display: flex;
+      justify-content: flex-end; }
+      main .companies .container .companies-content .content-item .content-back {
+        background: #BDD1E8;
+        width: 30rem;
+        height: 25rem;
+        position: relative; }
+        main .companies .container .companies-content .content-item .content-back .titleBig {
+          position: absolute;
+          font-family: "Gilroy Extra Bold", sans-serif;
+          font-weight: 700;
+          left: -10rem;
+          top: 5rem; }
+        main .companies .container .companies-content .content-item .content-back .text {
+          position: absolute;
+          font-family: "Gilroy Medium", sans-serif;
+          font-weight: 500;
+          bottom: -2rem;
+          left: 16rem;
+          width: 10rem; }
+      main .companies .container .companies-content .content-item .link {
+        color: #000;
+        font-family: "Gilroy Light", sans-serif;
+        font-weight: 300;
+        position: absolute;
+        bottom: 9rem;
+        right: -11rem;
+        transform: rotate(-90deg);
+        text-transform: uppercase;
+        letter-spacing: 1rem; }
+
 main .sliders {
   background: linear-gradient(180deg, #1A3C47 0%, #11252C 100%); }
+  main .sliders .titleMain {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5rem; }
+    main .sliders .titleMain span {
+      color: #8FA5A7; }
+  main .sliders .projects-slider {
+    padding-bottom: 8rem; }
+    main .sliders .projects-slider .swiper-projects-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      main .sliders .projects-slider .swiper-projects-container .slider-head {
+        display: flex;
+        justify-content: space-between;
+        width: 140rem;
+        position: absolute;
+        top: 23rem;
+        z-index: 3; }
+        main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav {
+          width: 33rem;
+          position: relative; }
+          main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation {
+            display: flex;
+            flex-direction: column; }
+            main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .projects-scrollbar {
+              height: 0.3rem;
+              background: rgba(255, 255, 255, 0.3); }
+              main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .projects-scrollbar .swiper-scrollbar-drag {
+                background: #fff;
+                width: 100%; }
+            main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav {
+              display: flex;
+              align-items: center;
+              justify-content: space-between; }
+              main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .nav-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                width: 13rem; }
+                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-prev,
+                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-next {
+                  background-size: 2rem 5.5rem;
+                  fill: #fff !important;
+                  height: 5.2rem;
+                  width: 2.7rem;
+                  position: static;
+                  margin-top: 0; }
+              main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .swiper-projects-pagination {
+                color: #fff;
+                position: static;
+                text-align: left;
+                font-family: "Gilroy Regular", sans-serif;
+                font-size: 2rem;
+                font-weight: 400; }
+                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .swiper-projects-pagination .swiper-pagination-current {
+                  font-family: "Gilroy Medium", sans-serif;
+                  font-size: 4rem;
+                  font-weight: 600; }
+                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .swiper-projects-pagination .swiper-pagination-total {
+                  font-family: "Gilroy Regular", sans-serif;
+                  font-size: 2rem;
+                  font-weight: 400; }
+      main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .swiper-slide {
+        text-align: center;
+        width: 50rem;
+        height: 95rem;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+      main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide {
+        position: relative; }
+        main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          z-index: 10;
+          margin-top: 20rem; }
+          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container img {
+            width: 5.2rem;
+            margin-bottom: 2rem; }
+          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container .title {
+            font-family: "Gilroy Semi Bold", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #8FA5A7;
+            margin-bottom: 0.5rem; }
+          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container .text {
+            color: #fff;
+            font-size: 2.7rem;
+            font-weight: 700;
+            font-family: "Gilroy Semi Bold", sans-serif;
+            margin-bottom: 3rem; }
+          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container .link {
+            color: #8FA5A7; }
+        main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .projects-bg-img {
+          position: absolute;
+          opacity: 0;
+          transition: .3s ease-in;
+          width: 100%;
+          height: 100%; }
+        main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .projects-bg-img.active {
+          opacity: .4; }
+  main .sliders .news-slider {
+    padding-bottom: 14.5rem; }
+    main .sliders .news-slider .swiper-news-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      main .sliders .news-slider .swiper-news-container .slider-head {
+        display: flex;
+        justify-content: space-between; }
+        main .sliders .news-slider .swiper-news-container .slider-head .slider-nav {
+          width: 33rem; }
+          main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation {
+            display: flex;
+            flex-direction: column; }
+            main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .news-scrollbar {
+              height: 0.3rem;
+              background: rgba(255, 255, 255, 0.3); }
+              main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .news-scrollbar .swiper-scrollbar-drag {
+                background: #fff; }
+            main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav {
+              display: flex;
+              align-items: center;
+              justify-content: space-between; }
+              main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .nav-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                width: 13rem; }
+                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-prev,
+                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-next {
+                  background-size: 2rem 5.5rem;
+                  fill: #fff !important;
+                  height: 5.2rem;
+                  width: 2.7rem;
+                  position: static;
+                  margin-top: 0; }
+              main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .swiper-news-pagination {
+                color: #fff;
+                position: static;
+                text-align: left;
+                font-family: "Gilroy Regular", sans-serif;
+                font-size: 2rem;
+                font-weight: 400; }
+                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .swiper-news-pagination .swiper-pagination-current {
+                  font-family: "Gilroy Medium", sans-serif;
+                  font-size: 4rem;
+                  font-weight: 600; }
+                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .swiper-news-pagination .swiper-pagination-total {
+                  font-family: "Gilroy Regular", sans-serif;
+                  font-size: 2rem;
+                  font-weight: 400; }
+      main .sliders .news-slider .swiper-news-container .swiper-wrapper .swiper-slide {
+        width: 49rem;
+        height: 49rem;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+        main .sliders .news-slider .swiper-news-container .swiper-wrapper .swiper-slide .swiper-slide-shadow-left,
+        main .sliders .news-slider .swiper-news-container .swiper-wrapper .swiper-slide .swiper-slide-shadow-right {
+          background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
+
+main .contact-form {
+  background: #F2F2F2; }
+  main .contact-form .container {
+    padding: 12.5rem 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+    main .contact-form .container .contacts {
+      padding: 6.5rem 0;
+      width: 41.7rem; }
+      main .contact-form .container .contacts .titleMain {
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 5rem; }
+        main .contact-form .container .contacts .titleMain span {
+          color: #8FA5A7; }
+      main .contact-form .container .contacts .title {
+        font-family: "Gilroy Bold", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #8FA5A7; }
+      main .contact-form .container .contacts .text {
+        font-family: "Gilroy Semi Bold", sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2f2f2f;
+        margin-bottom: 3rem; }
+      main .contact-form .container .contacts .text.phone {
+        font-family: "Gilroy Semi Bold", sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #2f2f2f; }
+    main .contact-form .container .img-container {
+      position: absolute;
+      right: 28rem;
+      top: 10rem;
+      width: 115rem; }
+      main .contact-form .container .img-container img {
+        position: absolute;
+        mix-blend-mode: multiply;
+        width: 115rem; }
+      main .contact-form .container .img-container img:last-child {
+        width: 86.5rem;
+        right: -5rem;
+        top: 13rem; }
+    main .contact-form .container form {
+      background: #eeeeee;
+      background: linear-gradient(73deg, #eeeeee 5%, #f7f7f7 10%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 3;
+      width: 59.7rem;
+      padding: 6.5rem 4.9rem;
+      position: relative; }
+      main .contact-form .container form .titleMain {
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 5rem; }
+        main .contact-form .container form .titleMain span {
+          color: #8FA5A7; }
+      main .contact-form .container form input[type=text],
+      main .contact-form .container form input[type=email] {
+        background: none;
+        border: 0;
+        border-bottom: 0.1rem solid #8FA5A7;
+        width: 100%;
+        padding: 1rem 0.5rem;
+        margin: 1rem 0 4.5rem;
+        font-family: "Gilroy Semi Bold", sans-serif;
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #2f2f2f; }
+      main .contact-form .container form .button {
+        width: 19rem;
+        border-radius: 9rem;
+        border: 0.1rem solid #8FA5A7;
+        background: none;
+        padding: 1.6rem 5.2rem;
+        font-family: "Gilroy Medium", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500; }
+      main .contact-form .container form .form-label {
+        display: flex;
+        align-self: start;
+        justify-content: flex-start;
+        font-family: "Gilroy Bold", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #8FA5A7;
+        text-transform: uppercase; }
+
+footer {
+  border-top: 0.1rem solid #C9CDCD;
+  background: #F2F2F2; }
+  footer .container {
+    padding: 5.5rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .container .footer-company-logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      footer .container .footer-company-logo img {
+        margin-right: 2rem; }
+      footer .container .footer-company-logo .text {
+        width: 22rem;
+        line-height: 2.4rem; }
+    footer .container .request-logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      footer .container .request-logo img {
+        width: 4.4rem;
+        height: 4.4rem; }
+      footer .container .request-logo .text {
+        width: 18.4rem;
+        margin-right: 2rem; }
+        footer .container .request-logo .text span {
+          text-transform: uppercase;
+          text-decoration: underline; }
