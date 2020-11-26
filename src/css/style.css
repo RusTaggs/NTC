@@ -203,625 +203,243 @@ input[type=number] {
   html {
     font-size: 4.4px; } }
 
+html {
+  background: #f2f2f2; }
+
 .titleMain {
   font-size: 5rem;
-  font-family: "Gilroy Extra Bold", sans-serif; }
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: 700;
+  color: #414141; }
 
 .titleBig {
   font-size: 3rem;
-  font-family: "Gilroy Bold", sans-serif; }
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: 700;
+  color: #414141; }
 
 .title {
-  font-size: 1.8rem;
-  font-family: "Gilroy Semi Bold", sans-serif; }
+  font-size: 2rem;
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: 700;
+  color: #414141; }
 
-.link {
-  font-size: 1.5rem;
-  font-family: "Gilroy Medium", sans-serif;
-  text-decoration: none;
-  color: #000; }
+.subtitle {
+  font-size: 1.8rem;
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: 700;
+  color: #414141; }
 
 .text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Gilroy Regular", sans-serif;
-  text-decoration: none;
-  color: #000; }
+  font-weight: 400;
+  color: #414141; }
 
-.button {
-  width: 19rem;
-  border-radius: 9rem;
-  border: 0.1rem solid #8FA5A7;
-  padding: 1.6rem 5.2rem;
-  font-family: "Gilroy Medium", sans-serif;
+.link {
+  text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 500; }
+  text-transform: uppercase;
+  color: #414141;
+  font-family: "Gilroy Regular", sans-serif;
+  font-weight: 400; }
+
+.link-arrowed {
+  width: 23.7rem;
+  position: relative;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #414141;
+  font-family: "Gilroy Regular", sans-serif;
+  font-weight: 400;
+  border-bottom: 0.1rem solid #afafaf;
+  padding: 1rem 0; }
+
+.link-arrowed::after {
+  background: url("../img/arrow-r-dark.png") no-repeat;
+  background-size: 2.5rem 1.8rem;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.8rem;
+  content: ''; }
+
+header .header-contact {
+  border-bottom: 0.1rem solid #afafaf;
+  height: 9rem;
+  display: flex;
+  align-items: center; }
+  header .header-contact .container {
+    display: flex;
+    align-items: center; }
+    header .header-contact .container .contact-item {
+      width: 35.6rem;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      height: 9rem;
+      padding-top: 1rem; }
+      header .header-contact .container .contact-item .phone {
+        color: #E63312;
+        font-family: "Gilroy Semi Bold", sans-serif;
+        font-weight: 600; }
+      header .header-contact .container .contact-item .email-container {
+        display: flex;
+        align-items: center; }
+        header .header-contact .container .contact-item .email-container img {
+          height: 2rem;
+          margin-right: 1rem; }
+      header .header-contact .container .contact-item .search-container {
+        display: flex;
+        align-items: center; }
+        header .header-contact .container .contact-item .search-container img {
+          height: 2rem;
+          margin-right: 1rem; }
+    header .header-contact .container .contact-item:first-child {
+      justify-content: flex-start;
+      width: 35.4rem;
+      padding-right: 8rem; }
+    header .header-contact .container .contact-item::after {
+      content: '';
+      width: 0.1rem;
+      height: 1.5rem;
+      background: #afafaf;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    header .header-contact .container .contact-item:last-child::after {
+      width: 0; }
+    header .header-contact .container .contact-item:last-child {
+      width: 36.6rem; }
 
 header .menu {
-  z-index: 100;
-  width: 140rem;
-  height: 7.2rem;
+  border-bottom: 0.1rem solid #afafaf;
+  height: 8rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 3.8rem;
-  padding-bottom: 1.3rem;
-  position: absolute;
-  margin: 0 auto;
-  top: 0; }
-  header .menu ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  header .menu .link {
-    text-transform: uppercase;
-    color: #fff;
-    margin-right: 3.5rem; }
-  header .menu .contacts {
+  justify-content: center; }
+  header .menu .container {
     display: flex;
     justify-content: center;
     align-items: center; }
-    header .menu .contacts .contacts-text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      color: #fff;
-      margin-right: 1.5rem; }
-      header .menu .contacts .contacts-text .text {
-        color: #fff; }
-    header .menu .contacts .icon {
-      width: 3.1rem;
-      height: 3.1rem; }
-      header .menu .contacts .icon img {
-        width: 3.1rem; }
-
-main .slider .swiper-container {
-  height: 65rem;
-  position: relative; }
-  main .slider .swiper-container .nav-container {
-    width: 140rem;
-    margin: 0 auto; }
-    main .slider .swiper-container .nav-container .slider-nav {
-      width: 28rem;
-      position: absolute;
-      z-index: 10;
-      top: 31rem; }
-      main .slider .swiper-container .nav-container .slider-nav .swiper-pagination {
-        position: static;
-        text-align: left;
-        font-family: "Gilroy Regular", sans-serif;
-        font-size: 2rem;
-        font-weight: 400; }
-        main .slider .swiper-container .nav-container .slider-nav .swiper-pagination .swiper-pagination-current {
-          font-family: "Gilroy Medium", sans-serif;
-          font-size: 4rem;
-          font-weight: 600; }
-        main .slider .swiper-container .nav-container .slider-nav .swiper-pagination .swiper-pagination-total {
-          font-family: "Gilroy Regular", sans-serif;
-          font-size: 2rem;
-          font-weight: 400; }
-      main .slider .swiper-container .nav-container .slider-nav .main-scrollbar {
-        height: 0.3rem;
-        background: rgba(255, 255, 255, 0.3); }
-        main .slider .swiper-container .nav-container .slider-nav .main-scrollbar .swiper-scrollbar-drag {
-          background: #fff; }
-  main .slider .swiper-container .swiper-pagination {
-    font-size: 3rem;
-    color: #fff; }
-  main .slider .swiper-container .swiper-wrapper .swiper-slide {
-    background: linear-gradient(103.73deg, rgba(0, 0, 0, 0.37) 27.13%, rgba(0, 0, 0, 0) 64.84%), linear-gradient(87.3deg, rgba(0, 0, 0, 0.37) 18.53%, rgba(0, 0, 0, 0) 50.93%), url("../img/header-bg.png") no-repeat; }
-    main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 {
-      height: 65rem;
-      background: linear-gradient(103.73deg, rgba(0, 0, 0, 0.37) 27.13%, rgba(0, 0, 0, 0) 64.84%), linear-gradient(87.3deg, rgba(0, 0, 0, 0.37) 18.53%, rgba(0, 0, 0, 0) 50.93%), url("../img/header-bg.png") no-repeat;
-      background-size: cover; }
-    main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 {
-      height: 65rem;
-      background: url("../img/slide2.png") no-repeat;
-      background-size: cover; }
-    main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1,
-    main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 {
-      display: flex;
-      align-items: center; }
-      main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container,
-      main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 9rem; }
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left {
-          width: 28rem;
-          position: relative;
-          margin-top: 10rem; }
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .left-slide-text .title,
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .left-slide-text .text,
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .left-slide-text .title,
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .left-slide-text .text {
-            color: #fff;
-            font-size: 1.5rem;
-            font-family: "Gilroy Light", sans-serif; }
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-left .left-slide-text .title,
-          main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-left .left-slide-text .title {
-            margin-bottom: 2rem;
-            font-weight: 700;
-            font-family: "Gilroy Medium", sans-serif; }
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .slide-right,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .slide-right {
-          width: 50rem; }
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .right-slide-text .titleBig,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .right-slide-text .titleMain,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .right-slide-text .text,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .right-slide-text .titleBig,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .right-slide-text .titleMain,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .right-slide-text .text {
-          color: #fff; }
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .right-slide-text .titleBig,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .right-slide-text .titleBig {
-          font-size: 2rem;
-          font-weight: 700; }
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .right-slide-text .titleMain,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .right-slide-text .titleMain {
-          margin: 5rem auto;
-          font-weight: 700;
-          line-height: 6.2rem; }
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide1 .container .right-slide-text .text,
-        main .slider .swiper-container .swiper-wrapper .swiper-slide .slide2 .container .right-slide-text .text {
-          width: 45.5rem; }
-
-main .mini-info {
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1E4653), color-stop(60%, #1E4653), color-stop(60%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  height: 21.6rem; }
-  main .mini-info .container {
-    display: flex;
-    align-items: center; }
-    main .mini-info .container .mini-left {
-      width: 87rem;
-      padding: 3.5rem 0;
+    header .menu .container .menu-container {
+      width: 69rem;
       display: flex;
       align-items: center;
-      justify-content: space-between; }
-      main .mini-info .container .mini-left img {
-        height: 14.5rem; }
-      main .mini-info .container .mini-left .info-left,
-      main .mini-info .container .mini-left .info-right {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 38rem; }
-        main .mini-info .container .mini-left .info-left .title,
-        main .mini-info .container .mini-left .info-right .title {
-          font-size: 1.6rem;
-          font-family: "Gilroy Bold", sans-serif;
-          color: #fff;
-          margin-bottom: 1.5rem;
-          font-weight: 700; }
-        main .mini-info .container .mini-left .info-left .text,
-        main .mini-info .container .mini-left .info-right .text {
-          font-size: 1.6rem;
-          color: #fff;
-          font-family: "Gilroy Light", sans-serif;
-          font-weight: 300; }
-      main .mini-info .container .mini-left .info-right {
-        padding-right: 0rem; }
-    main .mini-info .container .mini-right {
-      width: 52rem;
+      justify-content: space-between;
+      margin-top: 1.5rem; }
+
+main {
+  background: #f2f2f2; }
+  main .main-slider {
+    background: url("../img/slider-bg.png") no-repeat;
+    mix-blend-mode: multiply;
+    padding: 7.5rem 0 26.5rem; }
+    main .main-slider .container {
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      padding: 5rem 0;
-      padding-left: 8rem; }
-      main .mini-info .container .mini-right .right-container {
-        width: 36rem; }
-        main .mini-info .container .mini-right .right-container .title {
-          font-size: 1.8rem;
-          font-family: "Gilroy Bold", sans-serif;
-          margin-bottom: 1.5rem;
-          font-weight: 700;
-          color: #383838; }
-        main .mini-info .container .mini-right .right-container .text {
-          font-size: 1.6rem;
-          font-family: "Gilroy Light", sans-serif;
-          font-weight: 300;
-          margin-bottom: 1.5rem;
-          color: #383838; }
-        main .mini-info .container .mini-right .right-container .link {
-          font-size: 1.6rem;
-          font-family: "Gilroy Light", sans-serif;
-          font-weight: 300;
-          color: #383838; }
-          main .mini-info .container .mini-right .right-container .link::after {
-            content: '>';
-            margin-left: 1rem; }
-
-main .mini-info:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  width: 40%;
-  height: 21.6rem;
-  background-color: #fff;
-  z-index: -1; }
-
-main .main-about {
-  background: #1A3C47;
-  height: 77rem; }
-  main .main-about .container {
-    display: flex;
-    align-items: flex-end; }
-    main .main-about .container .items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 18rem; }
-      main .main-about .container .items .titleMain {
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 5rem; }
-        main .main-about .container .items .titleMain span {
-          color: #8FA5A7; }
-      main .main-about .container .items .items-container {
-        display: flex;
-        justify-content: center; }
-        main .main-about .container .items .items-container .item {
-          position: relative;
-          width: 35rem;
-          height: 54.4rem; }
-          main .main-about .container .items .items-container .item img {
-            position: absolute; }
-          main .main-about .container .items .items-container .item .bloom {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: linear-gradient(150.86deg, #2D3238 7.79%, #4D5156 96.75%), linear-gradient(153.55deg, #515349 4.2%, #8C8C8C 96.78%), rgba(41, 41, 47, 0.1);
-            opacity: .3; }
-          main .main-about .container .items .items-container .item .item-text {
-            position: relative;
-            padding: 5rem 2rem; }
-            main .main-about .container .items .items-container .item .item-text .title,
-            main .main-about .container .items .items-container .item .item-text .text {
-              color: #fff;
-              position: relative; }
-            main .main-about .container .items .items-container .item .item-text .title {
-              margin-bottom: 1.5rem; }
-          main .main-about .container .items .items-container .item .link {
-            color: #fff;
-            position: absolute;
-            bottom: 10rem;
-            left: -6rem;
-            transform: rotate(-90deg);
-            text-transform: uppercase;
-            letter-spacing: 1rem; }
-
-main .companies {
-  margin-top: 10rem;
-  margin-bottom: 13.5rem; }
-  main .companies .container .companies-head .titleMain {
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 6rem; }
-    main .companies .container .companies-head .titleMain span {
-      color: #8FA5A7; }
-  main .companies .container .companies-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; }
-    main .companies .container .companies-content .content-item {
-      width: 41.5rem;
-      margin-right: 2.5rem;
-      position: relative;
-      display: flex;
-      justify-content: flex-end; }
-      main .companies .container .companies-content .content-item .content-back {
-        background: #BDD1E8;
-        width: 30rem;
-        height: 25rem;
-        position: relative; }
-        main .companies .container .companies-content .content-item .content-back .titleBig {
-          position: absolute;
-          font-family: "Gilroy Extra Bold", sans-serif;
-          font-weight: 700;
-          left: -10rem;
-          top: 5rem; }
-        main .companies .container .companies-content .content-item .content-back .text {
-          position: absolute;
-          font-family: "Gilroy Medium", sans-serif;
-          font-weight: 500;
-          bottom: -2rem;
-          left: 16rem;
-          width: 10rem; }
-      main .companies .container .companies-content .content-item .link {
-        color: #000;
-        font-family: "Gilroy Light", sans-serif;
-        font-weight: 300;
-        position: absolute;
-        bottom: 9rem;
-        right: -11rem;
-        transform: rotate(-90deg);
-        text-transform: uppercase;
-        letter-spacing: 1rem; }
-
-main .sliders {
-  background: linear-gradient(180deg, #1A3C47 0%, #11252C 100%); }
-  main .sliders .titleMain {
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 5rem; }
-    main .sliders .titleMain span {
-      color: #8FA5A7; }
-  main .sliders .projects-slider {
-    padding-bottom: 8rem; }
-    main .sliders .projects-slider .swiper-projects-container {
-      width: 100%;
-      height: 100%;
-      overflow: hidden; }
-      main .sliders .projects-slider .swiper-projects-container .slider-head {
-        display: flex;
-        justify-content: space-between;
-        width: 140rem;
-        position: absolute;
-        top: 23rem;
-        z-index: 3; }
-        main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav {
-          width: 33rem;
-          position: relative; }
-          main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation {
-            display: flex;
-            flex-direction: column; }
-            main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .projects-scrollbar {
-              height: 0.3rem;
-              background: rgba(255, 255, 255, 0.3); }
-              main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .projects-scrollbar .swiper-scrollbar-drag {
-                background: #fff;
-                width: 100%; }
-            main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav {
-              display: flex;
-              align-items: center;
-              justify-content: space-between; }
-              main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .nav-buttons {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                position: relative;
-                width: 13rem; }
-                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-prev,
-                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-next {
-                  background-size: 2rem 5.5rem;
-                  fill: #fff !important;
-                  height: 5.2rem;
-                  width: 2.7rem;
-                  position: static;
-                  margin-top: 0; }
-              main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .swiper-projects-pagination {
-                color: #fff;
-                position: static;
-                text-align: left;
-                font-family: "Gilroy Regular", sans-serif;
-                font-size: 2rem;
-                font-weight: 400; }
-                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .swiper-projects-pagination .swiper-pagination-current {
-                  font-family: "Gilroy Medium", sans-serif;
-                  font-size: 4rem;
-                  font-weight: 600; }
-                main .sliders .projects-slider .swiper-projects-container .slider-head .slider-nav .navigation .main-nav .swiper-projects-pagination .swiper-pagination-total {
-                  font-family: "Gilroy Regular", sans-serif;
-                  font-size: 2rem;
-                  font-weight: 400; }
-      main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .swiper-slide {
-        text-align: center;
-        width: 50rem;
-        height: 95rem;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center; }
-      main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide {
-        position: relative; }
-        main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          z-index: 10;
-          margin-top: 20rem; }
-          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container img {
-            width: 5.2rem;
-            margin-bottom: 2rem; }
-          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container .title {
-            font-family: "Gilroy Semi Bold", sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: #8FA5A7;
-            margin-bottom: 0.5rem; }
-          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container .text {
-            color: #fff;
-            font-size: 2.7rem;
-            font-weight: 700;
-            font-family: "Gilroy Semi Bold", sans-serif;
-            margin-bottom: 3rem; }
-          main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .text-container .link {
-            color: #8FA5A7; }
-        main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .projects-bg-img {
-          position: absolute;
-          opacity: 0;
-          transition: .3s ease-in;
-          width: 100%;
-          height: 100%; }
-        main .sliders .projects-slider .swiper-projects-container .swiper-wrapper .project-slide .projects-bg-img.active {
-          opacity: .4; }
-  main .sliders .news-slider {
-    padding-bottom: 14.5rem; }
-    main .sliders .news-slider .swiper-news-container {
-      width: 100%;
-      height: 100%;
-      overflow: hidden; }
-      main .sliders .news-slider .swiper-news-container .slider-head {
-        display: flex;
-        justify-content: space-between; }
-        main .sliders .news-slider .swiper-news-container .slider-head .slider-nav {
-          width: 33rem; }
-          main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation {
-            display: flex;
-            flex-direction: column; }
-            main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .news-scrollbar {
-              height: 0.3rem;
-              background: rgba(255, 255, 255, 0.3); }
-              main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .news-scrollbar .swiper-scrollbar-drag {
-                background: #fff; }
-            main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav {
-              display: flex;
-              align-items: center;
-              justify-content: space-between; }
-              main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .nav-buttons {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                position: relative;
-                width: 13rem; }
-                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-prev,
-                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .nav-buttons .swiper-button-next {
-                  background-size: 2rem 5.5rem;
-                  fill: #fff !important;
-                  height: 5.2rem;
-                  width: 2.7rem;
-                  position: static;
-                  margin-top: 0; }
-              main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .swiper-news-pagination {
-                color: #fff;
-                position: static;
-                text-align: left;
-                font-family: "Gilroy Regular", sans-serif;
-                font-size: 2rem;
-                font-weight: 400; }
-                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .swiper-news-pagination .swiper-pagination-current {
-                  font-family: "Gilroy Medium", sans-serif;
-                  font-size: 4rem;
-                  font-weight: 600; }
-                main .sliders .news-slider .swiper-news-container .slider-head .slider-nav .navigation .main-nav .swiper-news-pagination .swiper-pagination-total {
-                  font-family: "Gilroy Regular", sans-serif;
-                  font-size: 2rem;
-                  font-weight: 400; }
-      main .sliders .news-slider .swiper-news-container .swiper-wrapper .swiper-slide {
-        width: 49rem;
-        height: 49rem;
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center; }
-        main .sliders .news-slider .swiper-news-container .swiper-wrapper .swiper-slide .swiper-slide-shadow-left,
-        main .sliders .news-slider .swiper-news-container .swiper-wrapper .swiper-slide .swiper-slide-shadow-right {
-          background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
-
-main .contact-form {
-  background: #F2F2F2; }
-  main .contact-form .container {
-    padding: 12.5rem 0;
-    position: relative;
-    display: flex;
-    justify-content: space-between; }
-    main .contact-form .container .contacts {
-      padding: 6.5rem 0;
-      width: 41.7rem; }
-      main .contact-form .container .contacts .titleMain {
-        font-weight: 700;
-        color: #000;
-        margin-bottom: 5rem; }
-        main .contact-form .container .contacts .titleMain span {
-          color: #8FA5A7; }
-      main .contact-form .container .contacts .title {
-        font-family: "Gilroy Bold", sans-serif;
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #8FA5A7; }
-      main .contact-form .container .contacts .text {
-        font-family: "Gilroy Semi Bold", sans-serif;
-        font-size: 2rem;
-        font-weight: 600;
-        color: #2f2f2f;
-        margin-bottom: 3rem; }
-      main .contact-form .container .contacts .text.phone {
-        font-family: "Gilroy Semi Bold", sans-serif;
-        font-size: 3rem;
-        font-weight: 600;
-        color: #2f2f2f; }
-    main .contact-form .container .img-container {
-      position: absolute;
-      right: 28rem;
-      top: 10rem;
-      width: 115rem; }
-      main .contact-form .container .img-container img {
-        position: absolute;
-        mix-blend-mode: multiply;
-        width: 115rem; }
-      main .contact-form .container .img-container img:last-child {
-        width: 86.5rem;
-        right: -5rem;
-        top: 13rem; }
-    main .contact-form .container form {
-      background: #eeeeee;
-      background: linear-gradient(73deg, #eeeeee 5%, #f7f7f7 10%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      z-index: 3;
-      width: 59.7rem;
-      padding: 6.5rem 4.9rem;
-      position: relative; }
-      main .contact-form .container form .titleMain {
-        font-weight: 700;
-        color: #000;
-        margin-bottom: 5rem; }
-        main .contact-form .container form .titleMain span {
-          color: #8FA5A7; }
-      main .contact-form .container form input[type=text],
-      main .contact-form .container form input[type=email] {
-        background: none;
-        border: 0;
-        border-bottom: 0.1rem solid #8FA5A7;
+      align-items: center; }
+      main .main-slider .container .main__slider-container {
+        height: 55rem;
         width: 100%;
-        padding: 1rem 0.5rem;
-        margin: 1rem 0 4.5rem;
-        font-family: "Gilroy Semi Bold", sans-serif;
-        font-size: 2.2rem;
-        font-weight: 600;
-        color: #2f2f2f; }
-      main .contact-form .container form .button {
-        width: 19rem;
-        border-radius: 9rem;
-        border: 0.1rem solid #8FA5A7;
-        background: none;
-        padding: 1.6rem 5.2rem;
-        font-family: "Gilroy Medium", sans-serif;
-        font-size: 1.6rem;
-        font-weight: 500; }
-      main .contact-form .container form .form-label {
-        display: flex;
-        align-self: start;
-        justify-content: flex-start;
-        font-family: "Gilroy Bold", sans-serif;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: #8FA5A7;
-        text-transform: uppercase; }
+        overflow: visible; }
+        main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide {
+          display: flex;
+          align-items: flex-end; }
+          main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .subtitle {
+            color: #1A3C47;
+            font-size: 1.8rem; }
+          main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .titleMain {
+            color: #E63312;
+            font-family: "Gilroy Regular", sans-serif;
+            font-weight: 400;
+            width: 64rem;
+            margin: 2rem 0 8rem; }
+            main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .titleMain span {
+              color: #414141; }
+          main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container {
+            display: flex;
+            align-items: center; }
+            main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container .text-item1 {
+              width: 46rem;
+              margin-right: 11.5rem; }
+              main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container .text-item1 .text {
+                line-height: 2.6rem; }
+            main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container .text-item2 {
+              width: 50rem; }
+              main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container .text-item2 .title,
+              main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container .text-item2 .text {
+                color: #1A3C47;
+                font-family: "Gilroy Bold", sans-serif;
+                font-weight: 700; }
+              main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-left .text-container .text-item2 .title {
+                margin-bottom: 1rem; }
+          main .main-slider .container .main__slider-container .main__swiper-wrapper .main__swiper-slide .slide-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 45%;
+            position: absolute;
+            right: 0; }
+        main .main-slider .container .main__slider-container .swiper-navigation {
+          display: flex;
+          align-items: flex-end;
+          position: absolute;
+          right: 0;
+          top: 7.5rem;
+          /* custmm bullets style */ }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-pagination {
+            position: static; }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-pagination-bullet {
+            width: 2rem;
+            height: 6rem;
+            background: none;
+            text-align: center;
+            line-height: 20px;
+            font-size: 0px;
+            color: #000;
+            opacity: 1;
+            position: relative; }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-pagination-bullet > span::after {
+            content: " ";
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 50%;
+            margin-top: 1rem;
+            width: 2px;
+            height: 1rem;
+            background: #afafaf; }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-pagination-bullet-active > span::after {
+            background: #E63312;
+            height: 2rem; }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-pagination-bullet-active {
+            background: none;
+            width: 2.8rem;
+            color: #E63312;
+            font-size: 3rem; }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-pagination-bullets {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center; }
+          main .main-slider .container .main__slider-container .swiper-navigation .swiper-buttons {
+            display: flex;
+            margin-left: 5rem; }
+            main .main-slider .container .main__slider-container .swiper-navigation .swiper-buttons .swiper-button-next {
+              background-image: url("../img/arrow-r.png");
+              margin-left: 2rem; }
+            main .main-slider .container .main__slider-container .swiper-navigation .swiper-buttons .swiper-button-prev {
+              background-image: url("../img/arrow-l.png"); }
+            main .main-slider .container .main__slider-container .swiper-navigation .swiper-buttons .swiper-button-prev,
+            main .main-slider .container .main__slider-container .swiper-navigation .swiper-buttons .swiper-button-next {
+              position: static;
+              margin-top: 0;
+              width: 2.5rem;
+              height: 1.8rem;
+              background-size: 2.5rem 1.8rem; }
 
 footer {
   border-top: 0.1rem solid #C9CDCD;
@@ -838,7 +456,7 @@ footer {
       footer .container .footer-company-logo img {
         margin-right: 2rem; }
       footer .container .footer-company-logo .text {
-        width: 22rem;
+        width: 24rem;
         line-height: 2.4rem; }
     footer .container .request-logo {
       display: flex;
@@ -848,7 +466,7 @@ footer {
         width: 4.4rem;
         height: 4.4rem; }
       footer .container .request-logo .text {
-        width: 18.4rem;
+        width: 20.4rem;
         margin-right: 2rem; }
         footer .container .request-logo .text span {
           text-transform: uppercase;
